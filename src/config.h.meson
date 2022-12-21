@@ -1,0 +1,503 @@
+/* src/config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#mesondefine AC_APPLE_UNIVERSAL_BUILD
+
+/* Define to 1 if the `closedir' function returns void instead of int. */
+#mesondefine CLOSEDIR_VOID
+
+/* Use high resolution file timestamps if nonzero. */
+#mesondefine FILE_TIMESTAMP_HI_RES
+
+/* Define to 1 if you have the `atexit' function. */
+#mesondefine HAVE_ATEXIT
+
+/* Use case insensitive file names */
+#mesondefine HAVE_CASE_INSENSITIVE_FS
+
+/* Define to 1 if you have the clock_gettime function. */
+#mesondefine HAVE_CLOCK_GETTIME
+
+/* Define to 1 if you have the declaration of `bsd_signal', and to 0 if you
+   don't. */
+#mesondefine HAVE_DECL_BSD_SIGNAL
+
+/* Define to 1 if you have the declaration of `dlerror', and to 0 if you
+   don't. */
+#mesondefine HAVE_DECL_DLERROR
+
+/* Define to 1 if you have the declaration of `dlopen', and to 0 if you don't.
+   */
+#mesondefine HAVE_DECL_DLOPEN
+
+/* Define to 1 if you have the declaration of `dlsym', and to 0 if you don't.
+   */
+#mesondefine HAVE_DECL_DLSYM
+
+/* Define to 1 if you have the declaration of 'getloadavg'. */
+#mesondefine HAVE_DECL_GETLOADAVG
+
+/* Define to 1 if you have the declaration of `sys_siglist', and to 0 if you
+   don't. */
+#mesondefine HAVE_DECL_SYS_SIGLIST
+
+/* Define to 1 if you have the declaration of `_sys_siglist', and to 0 if you
+   don't. */
+#mesondefine HAVE_DECL__SYS_SIGLIST
+
+/* Define to 1 if you have the declaration of `__sys_siglist', and to 0 if you
+   don't. */
+#mesondefine HAVE_DECL___SYS_SIGLIST
+
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
+   */
+#mesondefine HAVE_DIRENT_H
+
+/* Support DOS-style pathnames. */
+#mesondefine HAVE_DOS_PATHS
+
+/* Define to 1 if you have the `dup' function. */
+#mesondefine HAVE_DUP
+
+/* Define to 1 if you have the `dup2' function. */
+#mesondefine HAVE_DUP2
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#mesondefine HAVE_FCNTL_H
+
+/* Define to 1 if you have the `fdopen' function. */
+#mesondefine HAVE_FDOPEN
+
+/* Define to 1 if you have the `fork' function. */
+#mesondefine HAVE_FORK
+
+/* Define to 1 if you have the `getcwd' function. */
+#mesondefine HAVE_GETCWD
+
+/* Define to 1 if you have the `getgroups' function. */
+#mesondefine HAVE_GETGROUPS
+
+/* Define to 1 if you have the `getrlimit' function. */
+#mesondefine HAVE_GETRLIMIT
+
+/* Define to 1 if you have a standard gettimeofday function */
+#mesondefine HAVE_GETTIMEOFDAY
+
+/* Embed GNU Guile support */
+#mesondefine HAVE_GUILE
+
+/* Define to 1 if the system has the type `intmax_t'. */
+#mesondefine HAVE_INTMAX_T
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#mesondefine HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `isatty' function. */
+#mesondefine HAVE_ISATTY
+
+/* Define to 1 if you have the <limits.h> header file. */
+#mesondefine HAVE_LIMITS_H
+
+/* Define to 1 if you have the <locale.h> header file. */
+#mesondefine HAVE_LOCALE_H
+
+/* Define to 1 if the system has the type `long long int'. */
+#mesondefine HAVE_LONG_LONG_INT
+
+/* Define to 1 if you have the `lstat' function. */
+#mesondefine HAVE_LSTAT
+
+/* Define to 1 if you have the <memory.h> header file. */
+#mesondefine HAVE_MEMORY_H
+
+/* Define to 1 if you have the `mempcpy' function. */
+#mesondefine HAVE_MEMPCPY
+
+/* Define to 1 if you have the `memrchr' function. */
+#mesondefine HAVE_MEMRCHR
+
+/* Define to 1 if you have the <minix/config.h> header file. */
+#mesondefine HAVE_MINIX_CONFIG_H
+
+/* Define to 1 if you have the `mkfifo' function. */
+#mesondefine HAVE_MKFIFO
+
+/* Define to 1 if you have the `mkstemp' function. */
+#mesondefine HAVE_MKSTEMP
+
+/* Define to 1 if you have the `mktemp' function. */
+#mesondefine HAVE_MKTEMP
+
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
+#mesondefine HAVE_NDIR_H
+
+/* Define to 1 if you have the `pipe' function. */
+#mesondefine HAVE_PIPE
+
+/* Define to 1 if you have the `posix_spawn' function. */
+#mesondefine HAVE_POSIX_SPAWN
+
+/* Define to 1 if you have the `posix_spawnattr_setsigmask' function. */
+#mesondefine HAVE_POSIX_SPAWNATTR_SETSIGMASK
+
+/* Define to 1 if you have the `pselect' function. */
+#mesondefine HAVE_PSELECT
+
+/* Define to 1 if you have the `readlink' function. */
+#mesondefine HAVE_READLINK
+
+/* Define to 1 if you have the `realpath' function. */
+#mesondefine HAVE_REALPATH
+
+/* Define to 1 if <signal.h> defines the SA_RESTART constant. */
+#mesondefine HAVE_SA_RESTART
+
+/* Define to 1 if you have the `setegid' function. */
+#mesondefine HAVE_SETEGID
+
+/* Define to 1 if you have the `seteuid' function. */
+#mesondefine HAVE_SETEUID
+
+/* Define to 1 if you have the `setlinebuf' function. */
+#mesondefine HAVE_SETLINEBUF
+
+/* Define to 1 if you have the `setregid' function. */
+#mesondefine HAVE_SETREGID
+
+/* Define to 1 if you have the `setreuid' function. */
+#mesondefine HAVE_SETREUID
+
+/* Define to 1 if you have the `setrlimit' function. */
+#mesondefine HAVE_SETRLIMIT
+
+/* Define to 1 if you have the `setvbuf' function. */
+#mesondefine HAVE_SETVBUF
+
+/* Define to 1 if you have the `sigaction' function. */
+#mesondefine HAVE_SIGACTION
+
+/* Define to 1 if you have the `sigsetmask' function. */
+#mesondefine HAVE_SIGSETMASK
+
+/* Define to 1 if you have the <spawn.h> header file. */
+#mesondefine HAVE_SPAWN_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#mesondefine HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#mesondefine HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#mesondefine HAVE_STDLIB_H
+
+/* Define to 1 if you have the `stpcpy' function. */
+#mesondefine HAVE_STPCPY
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#mesondefine HAVE_STRCASECMP
+
+/* Define to 1 if you have the `strcmpi' function. */
+#mesondefine HAVE_STRCMPI
+
+/* Define to 1 if you have the `strcoll' function and it is properly defined.
+   */
+#mesondefine HAVE_STRCOLL
+
+/* Define to 1 if you have the `strdup' function. */
+#mesondefine HAVE_STRDUP
+
+/* Define to 1 if you have the `strerror' function. */
+#mesondefine HAVE_STRERROR
+
+/* Define to 1 if you have the `stricmp' function. */
+#mesondefine HAVE_STRICMP
+
+/* Define to 1 if you have the <strings.h> header file. */
+#mesondefine HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#mesondefine HAVE_STRING_H
+
+/* Define to 1 if you have the `strncasecmp' function. */
+#mesondefine HAVE_STRNCASECMP
+
+/* Define to 1 if you have the `strncmpi' function. */
+#mesondefine HAVE_STRNCMPI
+
+/* Define to 1 if you have the `strndup' function. */
+#mesondefine HAVE_STRNDUP
+
+/* Define to 1 if you have the `strnicmp' function. */
+#mesondefine HAVE_STRNICMP
+
+/* Define to 1 if you have the `strsignal' function. */
+#mesondefine HAVE_STRSIGNAL
+
+/* Define to 1 if you have the `strtoll' function. */
+#mesondefine HAVE_STRTOLL
+
+/* Define to 1 if `d_type' is a member of `struct dirent'. */
+#mesondefine HAVE_STRUCT_DIRENT_D_TYPE
+
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
+   */
+#mesondefine HAVE_SYS_DIR_H
+
+/* Define to 1 if you have the <sys/file.h> header file. */
+#mesondefine HAVE_SYS_FILE_H
+
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
+   */
+#mesondefine HAVE_SYS_NDIR_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#mesondefine HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#mesondefine HAVE_SYS_RESOURCE_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#mesondefine HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#mesondefine HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/timeb.h> header file. */
+#mesondefine HAVE_SYS_TIMEB_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#mesondefine HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#mesondefine HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/wait.h> header file. */
+#mesondefine HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the `ttyname' function. */
+#mesondefine HAVE_TTYNAME
+
+/* Define to 1 if the system has the type `uintmax_t'. */
+#mesondefine HAVE_UINTMAX_T
+
+/* Define to 1 if you have the `umask' function. */
+#mesondefine HAVE_UMASK
+
+/* Define to 1 if you have the 'union wait' type in <sys/wait.h>. */
+#mesondefine HAVE_UNION_WAIT
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#mesondefine HAVE_UNISTD_H
+
+/* Define to 1 if the system has the type `unsigned long long int'. */
+#mesondefine HAVE_UNSIGNED_LONG_LONG_INT
+
+/* Define to 1 if you have the `vfork' function. */
+#mesondefine HAVE_VFORK
+
+/* Define to 1 if you have the <vfork.h> header file. */
+#mesondefine HAVE_VFORK_H
+
+/* Define to 1 if you have the `wait3' function. */
+#mesondefine HAVE_WAIT3
+
+/* Define to 1 if you have the `waitpid' function. */
+#mesondefine HAVE_WAITPID
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#mesondefine HAVE_WCHAR_H
+
+/* Define to 1 if `fork' works. */
+#mesondefine HAVE_WORKING_FORK
+
+/* Define to 1 if `vfork' works. */
+#mesondefine HAVE_WORKING_VFORK
+
+/* Build host information. */
+#mesondefine MAKE_HOST
+
+/* Define to 1 to enable job server support in GNU make. */
+#mesondefine MAKE_JOBSERVER
+
+/* Define to 1 to enable 'load' support in GNU make. */
+#mesondefine MAKE_LOAD
+
+/* Define to 1 to enable symbolic link timestamp checking. */
+#mesondefine MAKE_SYMLINKS
+
+/* Define to 1 if config.h is generated by running the configure script. */
+#mesondefine MK_CONFIGURE
+
+/* Define to the address where bug reports for this package should be sent. */
+#mesondefine PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#mesondefine PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#mesondefine PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#mesondefine PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#mesondefine PACKAGE_URL
+
+/* Define to the version of this package. */
+#mesondefine PACKAGE_VERSION
+
+/* Define to the character that separates directories in PATH. */
+#mesondefine PATH_SEPARATOR_CHAR
+
+/* Define to the name of the SCCS 'get' command. */
+#mesondefine SCCS_GET
+
+/* Define to 1 if the SCCS 'get' command understands the '-G<file>' option. */
+#mesondefine SCCS_GET_MINUS_G
+
+/* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
+#mesondefine STAT_MACROS_BROKEN
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#mesondefine STDC_HEADERS
+
+/* Define to 1 to use posix_spawn(). */
+#mesondefine USE_POSIX_SPAWN
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+/* Enable general extensions on macOS.  */
+#ifndef _DARWIN_C_SOURCE
+# undef _DARWIN_C_SOURCE
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+/* Enable X/Open compliant socket functions that do not require linking
+   with -lxnet on HP-UX 11.11.  */
+#ifndef _HPUX_ALT_XOPEN_SOCKET_API
+# undef _HPUX_ALT_XOPEN_SOCKET_API
+#endif
+/* Identify the host operating system as Minix.
+   This macro does not affect the system headers' behavior.
+   A future release of Autoconf may stop defining this macro.  */
+#ifndef _MINIX
+# undef _MINIX
+#endif
+/* Enable general extensions on NetBSD.
+   Enable NetBSD compatibility extensions on Minix.  */
+#ifndef _NETBSD_SOURCE
+# undef _NETBSD_SOURCE
+#endif
+/* Enable OpenBSD compatibility extensions on NetBSD.
+   Oddly enough, this does nothing on OpenBSD.  */
+#ifndef _OPENBSD_SOURCE
+# undef _OPENBSD_SOURCE
+#endif
+/* Define to 1 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_SOURCE
+# undef _POSIX_SOURCE
+#endif
+/* Define to 2 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_1_SOURCE
+# undef _POSIX_1_SOURCE
+#endif
+/* Enable POSIX-compatible threading on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-5:2014.  */
+#ifndef __STDC_WANT_IEC_60559_ATTRIBS_EXT__
+# undef __STDC_WANT_IEC_60559_ATTRIBS_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-1:2014.  */
+#ifndef __STDC_WANT_IEC_60559_BFP_EXT__
+# undef __STDC_WANT_IEC_60559_BFP_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-2:2015.  */
+#ifndef __STDC_WANT_IEC_60559_DFP_EXT__
+# undef __STDC_WANT_IEC_60559_DFP_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-4:2015.  */
+#ifndef __STDC_WANT_IEC_60559_FUNCS_EXT__
+# undef __STDC_WANT_IEC_60559_FUNCS_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-3:2015.  */
+#ifndef __STDC_WANT_IEC_60559_TYPES_EXT__
+# undef __STDC_WANT_IEC_60559_TYPES_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TR 24731-2:2010.  */
+#ifndef __STDC_WANT_LIB_EXT2__
+# undef __STDC_WANT_LIB_EXT2__
+#endif
+/* Enable extensions specified by ISO/IEC 24747:2009.  */
+#ifndef __STDC_WANT_MATH_SPEC_FUNCS__
+# undef __STDC_WANT_MATH_SPEC_FUNCS__
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+/* Enable X/Open extensions.  Define to 500 only if necessary
+   to make mbstate_t available.  */
+#ifndef _XOPEN_SOURCE
+# undef _XOPEN_SOURCE
+#endif
+
+
+/* Build for the WINDOWS32 API. */
+#mesondefine WINDOWS32
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#mesondefine const
+
+/* Define to `int' if <sys/types.h> doesn't define. */
+#mesondefine gid_t
+
+/* Define to the widest signed integer type if <stdint.h> and <inttypes.h> do
+   not define. */
+#mesondefine intmax_t
+
+/* Define to `long int' if <sys/types.h> does not define. */
+#mesondefine off_t
+
+/* Define as a signed integer type capable of holding a process identifier. */
+#mesondefine pid_t
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#mesondefine size_t
+
+/* Define to `int' if <sys/types.h> does not define. */
+#mesondefine ssize_t
+
+/* Define to `int' if <sys/types.h> doesn't define. */
+#mesondefine uid_t
+
+/* Define to the widest unsigned integer type if <stdint.h> and <inttypes.h>
+   do not define. */
+#mesondefine uintmax_t
+
+/* Define as `fork' if `vfork' does not work. */
+#mesondefine vfork
