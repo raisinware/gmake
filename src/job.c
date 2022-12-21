@@ -3388,8 +3388,7 @@ construct_command_argv_internal (char *line, char **restp, const char *shell,
               argv = construct_command_argv_internal (f, 0, 0, 0, 0, flags, 0);
               if (argv)
                 {
-                  char **a;
-                  for (a = argv; *a; ++a)
+                  for (char **a = argv; *a; ++a)
                     {
                       new_argv[n++] = nextp;
                       nextp = stpcpy (nextp, *a) + 1;
