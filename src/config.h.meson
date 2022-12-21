@@ -1,7 +1,11 @@
-/* src/config.h.in.  Generated from configure.ac by autoheader.  */
+#define FILE_TIMESTAMP_HI_RES 0
+//#define NO_OUTPUT_SYNC
+//#define HAVE_SA_RESTART
+#include <mkconfig.h>
+#mesondefine LIBDIR
+#mesondefine LOCALEDIR
 
-/* Define if building universal (internal helper macro) */
-#mesondefine AC_APPLE_UNIVERSAL_BUILD
+/* src/config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if the `closedir' function returns void instead of int. */
 #mesondefine CLOSEDIR_VOID
@@ -388,12 +392,6 @@
 #ifndef _HPUX_ALT_XOPEN_SOCKET_API
 # undef _HPUX_ALT_XOPEN_SOCKET_API
 #endif
-/* Identify the host operating system as Minix.
-   This macro does not affect the system headers' behavior.
-   A future release of Autoconf may stop defining this macro.  */
-#ifndef _MINIX
-# undef _MINIX
-#endif
 /* Enable general extensions on NetBSD.
    Enable NetBSD compatibility extensions on Minix.  */
 #ifndef _NETBSD_SOURCE
@@ -457,18 +455,6 @@
 
 /* Build for the WINDOWS32 API. */
 #mesondefine WINDOWS32
-
-/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
-   significant byte first (like Motorola and SPARC, unlike Intel). */
-#if defined AC_APPLE_UNIVERSAL_BUILD
-# if defined __BIG_ENDIAN__
-#  define WORDS_BIGENDIAN 1
-# endif
-#else
-# ifndef WORDS_BIGENDIAN
-#  undef WORDS_BIGENDIAN
-# endif
-#endif
 
 /* Define to empty if `const' does not conform to ANSI C. */
 #mesondefine const

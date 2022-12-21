@@ -1,4 +1,17 @@
-project('gmake', 'c')
+project('gmake', 'c',
+        version: '4.4',
+        license: 'GPL-3.0-or-later',
+default_options: 'c_std=c99')
+incdir = include_directories('lib')
+
+gmake_fullname  = 'GNU Make (meson port)'
+gmake_bugreport = 'bug-make@gnu.org'
+gmake_url       = 'https://github.com/raisinware/gmake'
+
+add_project_arguments('-D_DEFAULT_SOURCE', language : 'c')
+add_project_arguments('-D_GNU_SOURCE', language : 'c')
+add_project_arguments('-D_BSD_SOURCE', language : 'c')
+
 
 cc = meson.get_compiler('c')
 cdata = configuration_data()
@@ -40,8 +53,8 @@ foreach h: check_headers
 endforeach
 
 check_functions = [
-# check token ['HAVE_ATEXIT']
-# check token ['HAVE_CASE_INSENSITIVE_FS']
+  ['HAVE_ATEXIT', 'atexit', '#include<stdlib.h>'],
+# check token ['HAVE_CASE_INSENSITIVE_FS'], not a function
   ['HAVE_CLOCK_GETTIME', 'clock_gettime', '#include<time.h>'],
 # check token ['HAVE_DECL_BSD_SIGNAL']
 # check token ['HAVE_DECL_DLERROR']
@@ -51,41 +64,41 @@ check_functions = [
 # check token ['HAVE_DECL_SYS_SIGLIST']
 # check token ['HAVE_DECL__SYS_SIGLIST']
 # check token ['HAVE_DECL___SYS_SIGLIST']
-# check token ['HAVE_DOS_PATHS']
-# check token ['HAVE_DUP']
+# check token ['HAVE_DOS_PATHS'], not a function
+  ['HAVE_DUP', 'dup', '#include<unistd.h>'],
   ['HAVE_DUP2', 'dup2', '#include<unistd.h>'],
-# check token ['HAVE_FDOPEN']
+  ['HAVE_FDOPEN', 'fdopen', '#include<stdio.h>'],
   ['HAVE_FORK', 'fork', '#include<unistd.h>'],
-# check token ['HAVE_GETCWD']
+  ['HAVE_GETCWD', 'getcwd', '#include<unistd.h>'],
   ['HAVE_GETGROUPS', 'getgroups', '#include<grp.h>'],
-# check token ['HAVE_GETRLIMIT']
+  ['HAVE_GETRLIMIT', 'getrlimit', '#include<sys/resource.h>'],
   ['HAVE_GETTIMEOFDAY', 'gettimeofday', '#include<sys/time.h>'],
-# check token ['HAVE_GUILE']
-# check token ['HAVE_INTMAX_T']
-# check token ['HAVE_ISATTY']
-# check token ['HAVE_LONG_LONG_INT']
+# check token ['HAVE_GUILE'], not a function
+# check token ['HAVE_INTMAX_T'], not a function
+  ['HAVE_ISATTY', 'isatty', '#include<unistd.h>'],
+# check token ['HAVE_LONG_LONG_INT'], not a function
   ['HAVE_LSTAT', 'lstat', '#include<sys/stat.h>'],
-# check token ['HAVE_MEMPCPY']
+  ['HAVE_MEMPCPY', 'mempcpy', '#include<string.h>'],
   ['HAVE_MEMRCHR', 'memrchr', '#include<string.h>'],
   ['HAVE_MKFIFO', 'mkfifo', '#include<sys/stat.h>'],
-# check token ['HAVE_MKSTEMP']
-# check token ['HAVE_MKTEMP']
+  ['HAVE_MKSTEMP', 'mkstemp', '#include<stdlib.h>'],
+  ['HAVE_MKTEMP', 'mktemp', '#include<stdlib.h>'],
   ['HAVE_PIPE', 'pipe', '#include<unistd.h>'],
-# check token ['HAVE_POSIX_SPAWN']
-# check token ['HAVE_POSIX_SPAWNATTR_SETSIGMASK']
-# check token ['HAVE_PSELECT']
+  ['HAVE_POSIX_SPAWN', 'posix_spawn', '#include<spawn.h>'],
+  ['HAVE_POSIX_SPAWNATTR_SETSIGMASK', 'posix_spawnattr_setsigmask', '#include<signal.h>\n#include<spawn.h>'],
+  ['HAVE_PSELECT', 'pselect', '#include<sys/select.h>'],
   ['HAVE_READLINK', 'readlink', '#include<unistd.h>'],
-# check token ['HAVE_REALPATH']
-# check token ['HAVE_SA_RESTART']
+  ['HAVE_REALPATH', 'realpath', '#include<stdlib.h>'],
+# check token ['HAVE_SA_RESTART'], not a function
   ['HAVE_SETEGID', 'setegid', '#include<unistd.h>'],
   ['HAVE_SETEUID', 'seteuid', '#include<unistd.h>'],
-# check token ['HAVE_SETLINEBUF']
+  ['HAVE_SETLINEBUF', 'setlinebuf', '#include<stdio.h>'],
   ['HAVE_SETREGID', 'setregid', '#include<unistd.h>'],
   ['HAVE_SETREUID', 'setreuid', '#include<unistd.h>'],
-# check token ['HAVE_SETRLIMIT']
+  ['HAVE_SETRLIMIT', 'setrlimit', '#include<sys/resource.h>'],
   ['HAVE_SETVBUF', 'setvbuf', '#include<unistd.h>'],
   ['HAVE_SIGACTION', 'sigaction', '#include<signal.h>'],
-# check token ['HAVE_SIGSETMASK']
+  ['HAVE_SIGSETMASK', 'sigsetmask', '#include<signal.h>'],
   ['HAVE_STPCPY', 'stpcpy', '#include<string.h>'],
   ['HAVE_STRCASECMP', 'strcasecmp', '#include<strings.h>'],
   ['HAVE_STRCMPI', 'strcmpi', '#include<string.h>'],
@@ -99,17 +112,17 @@ check_functions = [
   ['HAVE_STRNICMP', 'strnicmp', '#include<string.h>'],
   ['HAVE_STRSIGNAL', 'strsignal', '#include<signal.h>'],
   ['HAVE_STRTOLL', 'strtoll', '#include<stdlib.h>'],
-# check token ['HAVE_STRUCT_DIRENT_D_TYPE']
-# check token ['HAVE_TTYNAME']
-# check token ['HAVE_UINTMAX_T']
-# check token ['HAVE_UMASK']
-# check token ['HAVE_UNION_WAIT']
-# check token ['HAVE_UNSIGNED_LONG_LONG_INT']
+# check token ['HAVE_STRUCT_DIRENT_D_TYPE'], not a function
+  ['HAVE_TTYNAME', 'setreuid', '#include<unistd.h>'],
+# check token ['HAVE_UINTMAX_T'], not a function
+  ['HAVE_UMASK', 'umask', '#include<sys/stat.h>'],
+# check token ['HAVE_UNION_WAIT'], not a function
+# check token ['HAVE_UNSIGNED_LONG_LONG_INT'], not a function
   ['HAVE_VFORK', 'vfork', '#include<unistd.h>'],
   ['HAVE_WAIT3', 'wait3', '#include<sys/wait.h>'],
   ['HAVE_WAITPID', 'waitpid', '#include<sys/wait.h>'],
-# check token ['HAVE_WORKING_FORK']
-# check token ['HAVE_WORKING_VFORK']
+# check token ['HAVE_WORKING_FORK'], not a function
+# check token ['HAVE_WORKING_VFORK'], not a function
 ]
 
 foreach f: check_functions
@@ -117,5 +130,9 @@ foreach f: check_functions
     cdata.set(f.get(0), 1)
   endif
 endforeach
+
+cdata.set_quoted('LIBDIR',    '/usr/local/lib')
+cdata.set_quoted('LOCALEDIR', '/usr/local/share/locale')
+cdata.set_quoted('SCCS_GET',  'false')
 
 subdir('src')
