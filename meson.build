@@ -86,17 +86,17 @@ check_functions = [
   ['HAVE_SETVBUF', 'setvbuf', '#include<unistd.h>'],
   ['HAVE_SIGACTION', 'sigaction', '#include<signal.h>'],
 # check token ['HAVE_SIGSETMASK']
-# check token ['HAVE_STPCPY']
+  ['HAVE_STPCPY', 'stpcpy', '#include<string.h>'],
   ['HAVE_STRCASECMP', 'strcasecmp', '#include<strings.h>'],
-# check token ['HAVE_STRCMPI']
-# check token ['HAVE_STRCOLL']
+  ['HAVE_STRCMPI', 'strcmpi', '#include<string.h>'],
+  ['HAVE_STRCOLL', 'strcoll', '#include<string.h>'],
   ['HAVE_STRDUP', 'strdup', '#include<string.h>'],
   ['HAVE_STRERROR', 'strerror', '#include<string.h>'],
-# check token ['HAVE_STRICMP']
+  ['HAVE_STRICMP', 'stricmp', '#include<string.h>'],
   ['HAVE_STRNCASECMP', 'strncasecmp', '#include<strings.h>'],
-# check token ['HAVE_STRNCMPI']
+  ['HAVE_STRNCMPI', 'strncmpi', '#include<string.h>'],
   ['HAVE_STRNDUP', 'strndup', '#include<string.h>'],
-# check token ['HAVE_STRNICMP']
+  ['HAVE_STRNICMP', 'strnicmp', '#include<string.h>'],
   ['HAVE_STRSIGNAL', 'strsignal', '#include<signal.h>'],
   ['HAVE_STRTOLL', 'strtoll', '#include<stdlib.h>'],
 # check token ['HAVE_STRUCT_DIRENT_D_TYPE']
